@@ -1,6 +1,6 @@
 <html>
 <body>
-    #Cloud Native Orchestration
+    <h2>Cloud Native Orchestration</h2>
 
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
