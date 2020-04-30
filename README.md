@@ -80,4 +80,4 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
 </lu>
 <br/>
 <strong>AIM Role</strong><br/>
-Create a AIM Role with policies EKS* and attach to EC2 Instance via console.
+Create a AIM Role with all policies EKS * and attach its on EC2 Instance. This way you don't need to configure your credentials on EC2 instance.
