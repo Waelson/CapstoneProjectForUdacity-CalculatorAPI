@@ -1,7 +1,7 @@
 <html>
 <body>
-    <h2>Cloud Native Orchestration </h2>
-    <hr>
+    # Cloud Native Orchestration
+
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
 <h3>Description</h3>
