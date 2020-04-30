@@ -1,6 +1,5 @@
-<html>
-<body>
-    <h2>Cloud Native Orchestration</h2>
+
+<h2>Cloud Native Orchestration</h2>
 
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
@@ -84,6 +83,3 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
 <br/>
 <strong>AIM Role:</strong><br/>
 Create a AIM Role with all policies EKS * and attach it on EC2 Instance. This way you don't need to configure your credentials on EC2 instance.
-
-</body>
-</html>
