@@ -79,7 +79,7 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   <li>
     Docker Engine
     <ul>      
-      <li>$ sudo apt-get install docker-ce docker-ce-cli containerd.io</li> 
+      <li><code>$ sudo apt-get install docker-ce docker-ce-cli containerd.io</code></li> 
     </ul>
   
   <li>
