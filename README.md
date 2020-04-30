@@ -6,7 +6,7 @@
 <h3>Description</h3>
 This project consist to deploy a simple API into a cluster Kubernetes using deployment Blue/Green and Rolling techniques.<br/> The application used in this project is based on Python and Microframework Flask. It has just one end-points:<br/>
 <ul>
-  <li>/api/v0/multiply</li>
+  <li><strong>/api/v0/multiply</strong></li>
   <ul>
     <li>Example: http://localhost:5001/api/v0/multiply?param1=12&#38;param2=2</li>
   </ul>
