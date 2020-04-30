@@ -23,7 +23,15 @@ It was used Jenkins to automate manage of the Cluster Kubernetes  and Applicatio
       <li><code>$ pip install awscli --upgrade --user</code></li>  
     </ul>
   </li>
-  <li>EKSCTL</li>
+  
+  <li>
+    EKSCTL
+    <ul>
+      <li><code>$ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp</code></li>
+      <li><code>$ sudo mv /tmp/eksctl /usr/local/bin</code></li>
+    </ul>    
+  </li>
+  
   <li>AWS-IAM-Authenticator</li>
   <li>Kubectl</li>
   <li>AWS Client</li>
