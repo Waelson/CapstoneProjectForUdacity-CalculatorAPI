@@ -4,5 +4,13 @@
 <h3>Description</h3>
 This project consist to deploy a simple API into a cluster Kubernetes using deployment Blue/Green and Rolling techniques.<br/>
 
-<h3>Environment</h3>
-It was used Jenkins to automate manage of the Cluster Kubernetes  and Application. 
+<h3>Setting Environment</h3>
+It was used Jenkins to automate manage of the Cluster Kubernetes  and Application. <br/>
+<strong>Requirements</strong>
+<ul>
+  <li>AWS Client</li>
+  <li>EKSCTL</li>
+  <li>AWS-IAM-Authenticator</li>
+  <li>Kubectl</li>
+  <li>AWS Client</li>
+</lu>
