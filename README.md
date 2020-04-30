@@ -78,6 +78,6 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
     </ul>
   </li>
 </lu>
-
-<strong>AIM Role</strong>
+<br/>
+<strong>AIM Role</strong><br/>
 Create a AIM Role with policies EKS* and attach to EC2 Instance via console.
