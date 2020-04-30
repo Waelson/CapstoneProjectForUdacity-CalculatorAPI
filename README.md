@@ -108,5 +108,5 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 
 <h3>More Informations</h3>
 <ul>
-  <li>Getting started with eksctl - <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html</a></li>
+  <li>Getting started with EKSCTL - <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html</a></li>
 </ul>
