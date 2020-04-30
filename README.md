@@ -29,6 +29,15 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   </li>
   
   <li>
+    Jenkins Plugins
+    <ul>
+      <li>Blue Ocean</li>
+      <li>Pipeline: AWS Steps</li>
+      <li>CloudBees AWS Credentials</li>      
+    </ul>
+  </li>
+  
+  <li>
     Pip for Python 3
     <ul>
       <li><code>$ sudo apt update</code></li>
