@@ -111,9 +111,9 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
   <li>Getting started with EKSCTL - <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html</a></li>
 
 
-  <li>Launch a guest book application<a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html">https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html</a></li>
+  <li>Launch a guest book application - <a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html">https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html</a></li>
 
-  <li>Create a SSH Key<a href="https://eksworkshop.com/prerequisites/sshkey.html">https://eksworkshop.com/prerequisites/sshkey.html</a></li>  
+  <li>Create a SSH Key - <a href="https://eksworkshop.com/prerequisites/sshkey.html">https://eksworkshop.com/prerequisites/sshkey.html</a></li>  
   
   <li><a href=""></a></li>    
 </ul>
