@@ -5,7 +5,7 @@
 This project consist to deploy a simple API into a cluster Kubernetes using deployment Blue/Green and Rolling techniques.<br/>
 
 <h3>Setting Environment</h3>
-It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance. <br/><br/>
+It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance based on Ubuntu 18.04 image. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
   <li>
