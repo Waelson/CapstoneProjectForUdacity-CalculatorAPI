@@ -96,7 +96,7 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
 Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Instance running Jenkins. This way you don't need to configure your credentials into EC2 instance.<br/>
 
 <h3>Validating Environment</h3>
-1 - Connect to EC2 instance and execute the command below to create a cluster with 3 nodes. This command can to take about 15 minutos to finish. Be patient!<br/>
+1 - Connect to EC2 instance and execute the command below to create a cluster with 3 nodes. This command can to take about 15 minutes to finish. Be patient!<br/>
 <code>$ eksctl create cluster --name &#60;cluster-name&#62; --region &#60;region&#62; --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed</code><br/><br/>
 2 - Next, we need to update <code>˜/.kube/config</code> file, so that you can use the <code>kubectl</code> command.<br/>
 <code>$ aws eks update-kubeconfig --name &#60;cluster-name&#62;</code><br/><br/>
