@@ -8,6 +8,15 @@ This project consist to deploy a simple API into a cluster Kubernetes using depl
 It was used Jenkins to automate manage of the Cluster Kubernetes  and Application. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
+  <li>
+    Jenkins
+    <ul>  
+      <li><code>$ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -</code></li>
+      <li><code>$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'</code></li>
+      <li><code>$ sudo apt-get update</code></li>
+      <li><code>$ sudo apt-get install jenkins</code></li>      
+    </ul>
+  </li>
   
   <li>
     Pip for Python 3
