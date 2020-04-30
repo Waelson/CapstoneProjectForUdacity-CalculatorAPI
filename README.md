@@ -60,6 +60,12 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
     </ul>    
   </li>
   
-  <li>Kubectl</li>
-  <li>AWS Client</li>
+  <li>
+    Kubectl
+    <ul>  
+      <li><code>$ curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl</code></li>
+      <li><code>$ chmod +x ./kubectl</code></li>
+      <li><code>$ sudo mv ./kubectl /usr/local/bin/kubectl</code></li>      
+    </ul>
+  </li>
 </lu>
