@@ -32,7 +32,15 @@ It was used Jenkins to automate manage of the Cluster Kubernetes  and Applicatio
     </ul>    
   </li>
   
-  <li>AWS-IAM-Authenticator</li>
+  <li>
+    AWS-IAM-Authenticator
+    <ul>
+      <li><code>$ curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/aws-iam-authenticator</code></li>
+      <li><code>$ chmod +x ./aws-iam-authenticator</code></li>
+      <li><code>$ sudo mv aws-iam-authenticator /usr/local/bin</code></li>      
+    </ul>    
+  </li>
+  
   <li>Kubectl</li>
   <li>AWS Client</li>
 </lu>
