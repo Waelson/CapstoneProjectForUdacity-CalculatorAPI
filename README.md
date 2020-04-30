@@ -8,7 +8,7 @@ This project consist to deploy a simple API into a cluster Kubernetes using depl
 <ul>
   <li><strong>/api/v0/multiply</strong></li>
   <ul>
-    <li>Usage: http://localhost:5001/api/v0/multiply?param1=12&#38;param2=2</li>
+    <li>Usage: <code>http://localhost:5001/api/v0/multiply?param1=12&#38;param2=2</code></li>
   </ul>
 </ul>
 
