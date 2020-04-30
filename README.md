@@ -4,7 +4,7 @@
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
 <h3>Description</h3>
-This project consist to deploy a simple API into a cluster Kubernetes using deployment Blue/Green and Rolling techniques.<br/> The application used in this project is based on Python and Microframework Flask. It has just one end-points:<br/><br/>
+This project consists of deploying an API in a Kubernetes Cluster using deployment Rolling technique.<br/> The application used in this project is based on Python and Microframework Flask. This project has a single endpoint:<br/><br/>
 <ul>
   <li><strong>/api/v0/multiply</strong></li>
   <ul>
