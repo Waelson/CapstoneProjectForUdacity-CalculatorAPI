@@ -4,7 +4,11 @@
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
 <h3>Description</h3>
-This project consist to deploy a simple API into a cluster Kubernetes using deployment Blue/Green and Rolling techniques.<br/>
+This project consist to deploy a simple API into a cluster Kubernetes using deployment Blue/Green and Rolling techniques.<br/> The application used in this project is based on Python and Microframework Flask. It has two end-points:<br/>
+<ul>
+  <li>/</li>
+  <li>/api/v0/multiply</li>
+</ul>
 
 <h3>Setting Environment</h3>
 It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance based on Ubuntu 18.04 image. <br/><br/>
