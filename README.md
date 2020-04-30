@@ -9,12 +9,22 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
 <strong>Requirements:</strong>
 <ul>
   <li>
+    Java
+    <ul>
+      <li><code>$ sudo apt-get update</code></li>
+      <li><code>$ sudo apt install -y default-jdk</code></li>
+    </ul>
+  </li>
+  <li>
     Jenkins
     <ul>  
       <li><code>$ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -</code></li>
       <li><code>$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'</code></li>
       <li><code>$ sudo apt-get update</code></li>
-      <li><code>$ sudo apt-get install jenkins</code></li>      
+      <li><code>$ sudo apt-get install jenkins</code></li>     
+      <li><code>$ sudo systemctl start jenkins</code></li>
+      <li><code>$ sudo systemctl enable jenkins</code></li>
+      <li><code>$ sudo systemctl status jenkins</code></li>      
     </ul>
   </li>
   
