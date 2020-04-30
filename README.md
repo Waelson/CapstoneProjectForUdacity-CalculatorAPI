@@ -92,7 +92,7 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   </li>
 </ul>
 <br/>
-<strong>AIM Role:</strong><br/>
+<strong>Tip - Use AIM Role:</strong><br/>
 Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Instance running Jenkins. This way you don't need to configure your credentials into EC2 instance.<br/>
 
 <h3>Validating Environment</h3>
