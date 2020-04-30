@@ -105,6 +105,8 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 4 - Finally, delete cluster.<br/>
 <code>$ eksctl delete cluster cluster --name &#60;cluster-name&#62; --region &#60;region&#62;</code>
 
+<h3>Rolling Update Release</h3>
+Rolling updates allow Deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones.<br/><br/>
 
 <h3>More Informations</h3>
 <ul>
