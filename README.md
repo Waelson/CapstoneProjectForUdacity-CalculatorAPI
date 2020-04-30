@@ -48,7 +48,6 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   <li>
     Pip for Python 3
     <ul>
-      <li><code>$ sudo apt update</code></li>
       <li><code>$ sudo apt install python3-pip</code></li>
     </ul>  
   </li>  
@@ -76,6 +75,12 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
       <li><code>$ sudo mv aws-iam-authenticator /usr/local/bin</code></li>      
     </ul>    
   </li>
+  
+  <li>
+    Docker Engine
+    <ul>      
+      <li>$ sudo apt-get install docker-ce docker-ce-cli containerd.io</li> 
+    </ul>
   
   <li>
     Kubectl
