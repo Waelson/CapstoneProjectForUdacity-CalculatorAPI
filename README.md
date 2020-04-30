@@ -8,6 +8,7 @@ This project consist to deploy a simple API into a cluster Kubernetes using depl
 It was used Jenkins to automate manage of the Cluster Kubernetes  and Application. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
+  
   <li>
     Pip for Python 3
     <ul>
@@ -15,7 +16,13 @@ It was used Jenkins to automate manage of the Cluster Kubernetes  and Applicatio
       <li><code>$ sudo apt install python3-pip</code></li>
     </ul>  
   </li>  
-  <li>AWS Client</li>
+  
+  <li>
+    AWS Client
+    <ul>  
+      <li><code>$ pip install awscli --upgrade --user</code></li>  
+    </ul>
+  </li>
   <li>EKSCTL</li>
   <li>AWS-IAM-Authenticator</li>
   <li>Kubectl</li>
