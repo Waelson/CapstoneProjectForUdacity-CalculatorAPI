@@ -114,6 +114,6 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
   <li>Install Jenkins on Ubuntu - <a href="https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu">https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu</a></li>
   <li>How to Install Pip on Ubuntu 18.04 - <a href="https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/">https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/</a></li>  
   <li>Install Docker Engine on Ubuntu - <a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a></li>
-  <li><a href=""></a></li>
+  <li>Installing aws-iam-authenticator - <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html">https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html</a></li>
   <li><a href=""></a></li>  
 </ul>
