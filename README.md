@@ -139,6 +139,9 @@ spec:
 ...
 ```
 
+<br/>
+<a href="https://gyazo.com/f72814a0079c4e85a4b92f367e996613"><img src="https://i.gyazo.com/f72814a0079c4e85a4b92f367e996613.gif" alt="Image from Gyazo" width="910"/></a>
+
 <h3>:heavy_check_mark: More Informations</h3>
 <ul>
   <li>Getting started with EKSCTL - <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html</a></li>
