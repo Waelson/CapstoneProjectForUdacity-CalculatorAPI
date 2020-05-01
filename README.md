@@ -28,7 +28,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   <li><code>run_docker.sh</code> - Script to build docker image</li>  
 </ul>
 
-<h3>Setting Environment CI/CD</h3>
+<h3>Setting CI/CD Environment</h3>
 It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance based on Ubuntu 18.04 image. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
