@@ -110,6 +110,7 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
 <br/>
 :bulb: <strong>Tip - Use AIM Role:</strong><br/>
 Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Instance running Jenkins. This way you don't need to configure your credentials into EC2 instance.<br/>
+<img width="50%" height="50%" src="https://github.com/Waelson/CapstoneProjectForUdacity-CalculatorAPI/blob/master/images/amazon_eks_policies.png"/>
 
 <h3>:heavy_check_mark: Validating Environment</h3>
 1 - Connect to EC2 instance and execute the command below to create a cluster with 3 nodes. This command can to take about 15 minutes to finish. Be patient!<br/>
