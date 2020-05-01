@@ -3,7 +3,7 @@
 
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
-<h3>:small_orange_diamond: Description</h3>
+<h3>:heavy_check_mark: Description</h3>
 This project consists of deploying an API in a Kubernetes Cluster using deployment Rolling Update technique.<br/> The application used in this project is based on Python and Flask. This project has a single endpoint:<br/><br/>
 <ul>
   <li><strong>/api/v0/multiply</strong></li>
@@ -12,7 +12,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   </ul>
 </ul>
 
-<h3>:small_orange_diamond: Content of Repository</h3>
+<h3>:heavy_check_mark: Content of Repository</h3>
 <ul>
   <li>
     :file_folder: Folders
@@ -28,7 +28,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   <li>:page_facing_up: <code>run_docker.sh</code> - Script to build docker image</li>  
 </ul>
 
-<h3>:small_orange_diamond: Preparing CI/CD Environment</h3>
+<h3>:heavy_check_mark: Preparing CI/CD Environment</h3>
 It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance based on Ubuntu 18.04 image. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
