@@ -17,9 +17,9 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   <li>
     Folders
     <ul>
-      <li>scripts</li>
-      <li>descriptors-k8s</li>
-      <li>images</li>      
+      <li><code>scripts</code> - </li>
+      <li><code>descriptors-k8s</code> - </li>
+      <li><code>images</code> - </li>      
     </ul>
   </li>
   <li><code>Dockerfile</code> - </li>
