@@ -14,9 +14,17 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
 
 <h3>Content of Repository</h3>
 <ul>
-  <li>scripts</li>
-  <li>descriptors-k8s</li>
-  <li>images</li>
+  <li>
+    Folders
+    <ul>
+      <li>scripts</li>
+      <li>descriptors-k8s</li>
+      <li>images</li>      
+    </ul>
+  </li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
 
 <h3>Setting Environment CI/CD</h3>
