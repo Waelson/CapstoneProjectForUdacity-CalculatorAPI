@@ -108,6 +108,8 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 <h3>Rolling Update Release</h3>
 Rolling updates allow Deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones.<br/>
 
+Snnipet code from the file `deployment.yaml`.<br/>
+
 ```
 ...
 spec:
