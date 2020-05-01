@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    
+    parameters {
+        string(name: 'strClusterName',
+            defaultValue: 'cluster-project-capstone',
+            description: 'Cluster name')
+            
+
+        string(name: 'strRegion',
+            defaultValue: 'us-west-2',
+            description: 'AWS Region')            
+    }    
+    
+    environment{
+        def eksctlExec = "/usr/local/bin/eksctl"
+    }
+    
+    stages {
+        stage('Delete Cluster'){
+            steps{
+                sh "${eksctlExec} delete cluster --name ${params.strClusterName} --region ${params.strRegion}"
+            }  
+        }
+    }
+}
