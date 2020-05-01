@@ -24,7 +24,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   </li>
   <li><code>Dockerfile</code> - Docker descriptor</li>
   <li><code>main.py</code> - Web application</li>
-  <li><code>requirements.txt</code> - Dependencies of the application</li>
+  <li><code>requirements.txt</code> - Definitions of dependencies of the application</li>
   <li><code>run_docker.sh</code> - Script to build docker image</li>  
 </ul>
 
