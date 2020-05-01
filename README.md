@@ -125,7 +125,7 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 <h3>:heavy_check_mark: Rolling Update Release</h3>
 As defined by the website kubernetes.io, rolling updates is a strategy that allow you deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones. 
 <br/>
-Below snnipet code from the file `deployment.yaml` used in this project to deploy application.<br/><br/>
+Below snnipet code from the file ```deployment.yaml` used in this project to deploy application.<br/><br/>
 
 ```
 ...
