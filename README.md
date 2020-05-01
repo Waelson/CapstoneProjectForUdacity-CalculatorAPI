@@ -22,10 +22,10 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
       <li>images</li>      
     </ul>
   </li>
-  <li>`Dockerfile` - </li>
-  <li>main.py</li>
-  <li>requirements.txt</li>
-  <li>run_docker.sh</li>  
+  <li><code>Dockerfile</code> - </li>
+  <li><code>main.py</code> - </li>
+  <li><code>requirements.txt</code> - </li>
+  <li><code>run_docker.sh</code> - </li>  
 </ul>
 
 <h3>Setting Environment CI/CD</h3>
