@@ -17,15 +17,15 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   <li>
     :file_folder: Folders
     <ul>
-      <li><code>pipelines</code> - Definitions of the pipeline used by Jenkins </li>
-      <li><code>descriptors-k8s</code> - Descriptors to deploy application in the Kubernetes </li>
-      <li><code>images</code> - Evidences of pipeline operation</li>      
+      <li>:page_facing_up: <code>pipelines</code> - Definitions of the pipeline used by Jenkins </li>
+      <li>:page_facing_up: <code>descriptors-k8s</code> - Descriptors to deploy application in the Kubernetes </li>
+      <li>:page_facing_up: <code>images</code> - Evidences of pipeline operation</li>      
     </ul>
   </li>
-  <li><code>Dockerfile</code> - Docker descriptor</li>
-  <li><code>main.py</code> - Web application</li>
-  <li><code>requirements.txt</code> - Definitions of dependencies of the application</li>
-  <li><code>run_docker.sh</code> - Script to build docker image</li>  
+  <li>:page_facing_up: <code>Dockerfile</code> - Docker descriptor</li>
+  <li>:page_facing_up: <code>main.py</code> - Web application</li>
+  <li>:page_facing_up: <code>requirements.txt</code> - Definitions of dependencies of the application</li>
+  <li>:page_facing_up: <code>run_docker.sh</code> - Script to build docker image</li>  
 </ul>
 
 <h3>Preparing CI/CD Environment</h3>
