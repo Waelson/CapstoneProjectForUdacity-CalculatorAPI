@@ -19,7 +19,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
     <ul>
       <li><code>pipelines</code> - Definitions of the pipeline used by Jenkins </li>
       <li><code>descriptors-k8s</code> - Descriptors to deploy application in the Kubernetes </li>
-      <li><code>images</code> - </li>      
+      <li><code>images</code> - Evidences of pipeline operation</li>      
     </ul>
   </li>
   <li><code>Dockerfile</code> - Docker descriptor</li>
