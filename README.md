@@ -15,7 +15,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
 <h3>Content of Repository</h3>
 <ul>
   <li>
-    Folders
+    :file_folder: Folders
     <ul>
       <li><code>pipelines</code> - Definitions of the pipeline used by Jenkins </li>
       <li><code>descriptors-k8s</code> - Descriptors to deploy application in the Kubernetes </li>
