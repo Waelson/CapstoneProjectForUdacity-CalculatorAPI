@@ -12,7 +12,14 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   </ul>
 </ul>
 
-<h3>Setting Environment</h3>
+<h3>Content of Repository</h3>
+<ul>
+  <li>scripts</li>
+  <li>descriptors-k8s</li>
+  <li>images</li>
+</ul>
+
+<h3>Setting Environment CI/CD</h3>
 It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance based on Ubuntu 18.04 image. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
