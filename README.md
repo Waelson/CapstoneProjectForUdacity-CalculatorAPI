@@ -28,7 +28,7 @@ This project consists of deploying an API in a Kubernetes Cluster using deployme
   <li>:page_facing_up: <code>run_docker.sh</code> - Script to build docker image</li>  
 </ul>
 
-<h3>:white_check_mark: Preparing CI/CD Environment</h3>
+<h3>:heavy_check_mark: Preparing CI/CD Environment</h3>
 It was used Jenkins to automate manage of the Cluster Kubernetes and Application on AWS EC2 Instance based on Ubuntu 18.04 image. <br/><br/>
 <strong>Requirements:</strong>
 <ul>
@@ -111,7 +111,7 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
 :bulb: <strong>Tip - Use AIM Role:</strong><br/>
 Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Instance running Jenkins. This way you don't need to configure your credentials into EC2 instance.<br/>
 
-<h3>Validating Environment</h3>
+<h3>:heavy_check_mark: Validating Environment</h3>
 1 - Connect to EC2 instance and execute the command below to create a cluster with 3 nodes. This command can to take about 15 minutes to finish. Be patient!<br/>
 <code>$ eksctl create cluster --name &#60;cluster-name&#62; --region &#60;region&#62; --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed</code><br/><br/>
 2 - Next, we need to update <code>˜/.kube/config</code> file, so that you can use the <code>kubectl</code> command.<br/>
@@ -121,7 +121,7 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 4 - Finally, delete cluster.<br/>
 <code>$ eksctl delete cluster cluster --name &#60;cluster-name&#62; --region &#60;region&#62;</code>
 
-<h3>Rolling Update Release</h3>
+<h3>:heavy_check_mark: Rolling Update Release</h3>
 As defined by the website kubernetes.io, rolling updates is a strategy that allow you deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones. 
 <br/>
 Below snnipet code from the file `deployment.yaml` used in this project to deploy application.<br/><br/>
@@ -138,7 +138,7 @@ spec:
 ...
 ```
 
-<h3>More Informations</h3>
+<h3>:heavy_check_mark: More Informations</h3>
 <ul>
   <li>Getting started with EKSCTL - <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html</a></li>
   <li>Launch a guest book application - <a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html">https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html</a></li>
