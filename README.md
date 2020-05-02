@@ -106,6 +106,16 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
       <li><code>$ sudo mv ./kubectl /usr/local/bin/kubectl</code></li>      
     </ul>
   </li>
+  
+  <li>
+    Shopfy/krane
+    <ul>
+      <li><code>$ sudo apt install ruby-full</code></li>
+      <li><code>$ sudo gem install rake</code></li>
+      <li><code>$ sudo gem install rainbow -v '2.2.2'</code></li>
+      <li><code>$ sudo gem install krane</code></li>      
+    </ul>
+  </li>
 </ul>
 <br/>
 :bulb: <strong>Tip - Use AIM Role:</strong><br/>
@@ -157,7 +167,7 @@ spec:
 
 <br/>
 
-<h3>:heavy_check_mark: More Informations</h3>
+<h3>:heavy_check_mark: References</h3>
 <ul>
   <li>Getting started with EKSCTL - <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html">https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html</a></li>
   <li>Launch a guest book application - <a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html">https://docs.aws.amazon.com/eks/latest/userguide/eks-guestbook.html</a></li>
@@ -167,4 +177,5 @@ spec:
   <li>Install Docker Engine on Ubuntu - <a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a></li>
   <li>Installing aws-iam-authenticator - <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html">https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html</a></li>
   <li>Install and Set Up kubectl - <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">https://kubernetes.io/docs/tasks/tools/install-kubectl/</a></li>  
+  <li>Shopfy/krane - <a href="https://github.com/Shopify/krane">https://github.com/Shopify/krane</a></li>
 </ul>
