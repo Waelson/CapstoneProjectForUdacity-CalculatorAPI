@@ -1,6 +1,7 @@
+import logging
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
-import logging
+
 
 APP = Flask(__name__)
 LOGGER = create_logger(APP)
