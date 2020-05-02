@@ -15,10 +15,10 @@ def home():
 def multiply():
     param1 = request.args.get(key='param1', default=0, type=int)
     if param1 == 0:
-        return jsonify("status" = "error", "message" = "Invalid parameter #1", "value" = str(param1)), 500    
+        return jsonify("status" = "error", "message" = "Invalid parameter #1", "value" = "param1"), 500    
     param2 = request.args.get(key='param2', default=0, type=int)
     if param2 == 0:
-        return jsonify("status" = "error", "message" = "Invalid parameter #2", "value" = str(param2)), 500
+        return jsonify("status" = "error", "message" = "Invalid parameter #2", "value" = "param2"), 500
     result = int(param1) * int(param2)    
     return jsonify("status" = "success", "result" = result), 200
 
