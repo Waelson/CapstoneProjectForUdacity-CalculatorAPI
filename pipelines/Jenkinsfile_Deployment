@@ -14,6 +14,7 @@ pipeline {
         def hadolintExec = "/bin/hadolint"
         def kraneExec = "/var/lib/gems/2.5.0/gems/krane-1.1.3/exe/krane"
         def workspace = pwd()
+        def descriptorsk8s = "${workspace}/descriptors-k8s"
     }
     
     stages {
@@ -51,7 +52,8 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ${workspace}/descriptors-k8s/"
+                sh "${descriptorsk8s} -> OK"
+                sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ${descriptorsk8s}"
             }
         }
         /*
