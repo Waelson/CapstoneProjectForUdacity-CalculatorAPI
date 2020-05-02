@@ -3,14 +3,14 @@ from flask.logging import create_logger
 import logging
 
 APP = Flask(__name__)
-LOGGER = create_logger(app)
+LOGGER = create_logger(APP)
 LOGGER.setLevel(logging.DEBUG)
 
-@app.route("/")
+@APP.route("/")
 def home():
     return "Welcome to Calculator API"
 
-@app.route("/api/v0/multiply")
+@APP.route("/api/v0/multiply")
 def multiply():
     param1 = request.args.get(key='param1', default=0, type=int)
     if param1 == 0:
