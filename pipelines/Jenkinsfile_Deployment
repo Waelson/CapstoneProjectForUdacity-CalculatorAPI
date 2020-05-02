@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     parameters {
-        string(name: 'strVersao',
-            defaultValue: 'stable',
-            description: 'Número da Versão')
+        string(name: 'strVersao', defaultValue: 'stable', description: 'Version')
+        string(name: 'strClusterName', defaultValue: 'cluster-project-capstone', description: 'Cluster name')
+        choice(name: 'strNamespace', choices: ['production', 'staging', 'development'], description: 'What namespace?')            
     }    
     
     environment{
@@ -15,10 +15,12 @@ pipeline {
         def kraneExec = "/var/lib/gems/2.5.0/gems/krane-1.1.3/exe/krane"
         def workspace = pwd()
         def descriptorsk8s = "${workspace}/descriptors-k8s"
+        
+        def currentContext = $(kubectl config current-context)
     }
     
     stages {
-        stage('SCM Checkout'){
+        stage('Checkout'){
             steps{
                  checkout scm
             }
@@ -44,10 +46,13 @@ pipeline {
                 }
             }
         }
-        stage('Deploy Kubernetes'){
+        stage('Deploy'){
             steps{
-                sh "chmod +x ./run_deploy.sh"
-                sh "./run_deploy.sh"
+                sh "${kraneExec} deploy ${strNamespace} ${currentContext} -f ./descriptors-k8s"
+                sh "kubectl get services -o wide --namespace ${strNamespace}
+                
+                //sh "chmod +x ./run_deploy.sh $1"
+                //sh "./run_deploy.sh"
             }
         }
     }    
