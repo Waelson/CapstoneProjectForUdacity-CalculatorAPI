@@ -32,7 +32,7 @@ pipeline {
         
         stage('Build Image'){
             steps{
-                sh "${dockerExec} build --tag=thedevices/app-python-demo:${params.strVersao} ."
+                sh "${dockerExec} build --tag=thedevices/calculator-api:${params.strVersao} ."
             }
         }
         
@@ -40,16 +40,12 @@ pipeline {
             steps{
                 withCredentials([string(credentialsId: 'dockerhub-credential', variable: 'dockerHubPassword')]) {
                     sh "${dockerExec} login -u thedevices -p ${dockerHubPassword}"
-                    sh "${dockerExec} push thedevices/app-python-demo:${params.strVersao}"
+                    sh "${dockerExec} push thedevices/calculator-api:${params.strVersao}"
                 }
             }
         }
         stage('Deploy'){
             steps{
-                //sh "export CURRENT_CONTEXT=$(kubectl config current-context)"
-                //sh "${kraneExec} deploy ${strNamespace} $CURRENT_CONTEXT -f ./descriptors-k8s"
-                //sh "kubectl get services -o wide --namespace ${strNamespace}
-                
                 sh "chmod +x ./run_deploy.sh"
                 sh "./run_deploy.sh ${params.strNamespace}"
             }
