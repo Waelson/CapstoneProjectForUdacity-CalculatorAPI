@@ -15,8 +15,6 @@ pipeline {
         def kraneExec = "/var/lib/gems/2.5.0/gems/krane-1.1.3/exe/krane"
         def workspace = pwd()
         def descriptorsk8s = "${workspace}/descriptors-k8s"
-        
-        def currentContext = $(kubectl config current-context)
     }
     
     stages {
@@ -48,7 +46,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "${kraneExec} deploy ${strNamespace} ${currentContext} -f ./descriptors-k8s"
+                sh "${kraneExec} deploy ${strNamespace} $(kubectl config current-context) -f ./descriptors-k8s"
                 sh "kubectl get services -o wide --namespace ${strNamespace}
                 
                 //sh "chmod +x ./run_deploy.sh $1"
