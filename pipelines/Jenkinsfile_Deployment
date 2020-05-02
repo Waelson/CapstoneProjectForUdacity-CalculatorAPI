@@ -51,7 +51,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ${workspace}/descriptors-k8s"
+                sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ${workspace}/descriptors-k8s/"
             }
         }
         /*
