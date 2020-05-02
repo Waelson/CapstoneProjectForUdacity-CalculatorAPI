@@ -5,16 +5,6 @@ pipeline {
         string(name: 'strClusterName', defaultValue: 'cluster-project-capstone', description: 'Cluster name')
         choice(name: 'strNamespace', choices: ['production', 'staging', 'development'], description: 'What namespace?')
         choice(name: 'strRegion', choices: ['us-east-1', 'us-west-2'], description: 'What AWS region?')            
-        
-        /* string(name: 'strRegion',
-            defaultValue: 'us-west-2',
-            description: 'AWS Region') */
-            
-
-        /* string(name: 'strNamespace',
-            defaultValue: 'production',
-            description: 'Namespace (ex: production, stage or test)') */
-            
     }    
     
     environment{
