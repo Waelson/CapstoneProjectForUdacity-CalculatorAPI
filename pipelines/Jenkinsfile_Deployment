@@ -21,7 +21,8 @@ pipeline {
         stage('SCM Checkout'){
             steps{
                 sh "echo Realizando checkout"
-                git credentialsId: 'git-credential', url: 'https://github.com/Waelson/Python-Application-Containerization'
+                 checkout scm
+                //git credentialsId: 'git-credential', url: 'https://github.com/Waelson/Python-Application-Containerization'
             }
         }
         
