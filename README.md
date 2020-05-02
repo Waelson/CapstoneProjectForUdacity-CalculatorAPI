@@ -115,8 +115,10 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 <h3>:heavy_check_mark: Validating Environment</h3>
 
 1 - Connect to EC2 instance and execute the command below to create a cluster with 3 nodes. This command can to take about 15 minutes to finish. Be patient!<br/>
-<code>$ eksctl create cluster --name &#60;cluster-name&#62; --region &#60;region&#62; --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed</code><br/><br/>
-
+<code>$ eksctl create cluster --name &#60;cluster-name&#62; --region &#60;region&#62; --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed</code><br/>
+<a href="https://gyazo.com/0529950fbd5198c004ec10413389f494"><img src="https://i.gyazo.com/0529950fbd5198c004ec10413389f494.gif" alt="Image from Gyazo" width="674"/></a>
+<br/>
+<br/>
 
 2 - Next, we need to update <code>˜/.kube/config</code> file, so that you can use the <code>kubectl</code> command.<br/>
 <code>$ aws eks update-kubeconfig --name &#60;cluster-name&#62; --region &#60;region&#62;</code><br/>
