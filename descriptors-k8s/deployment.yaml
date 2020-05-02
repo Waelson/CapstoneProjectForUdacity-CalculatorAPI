@@ -17,7 +17,7 @@ spec:
       containers:
         - name: flask-app
           imagePullPolicy: Always
-          image: thedevices/app-python-demo:stable
+          image: thedevices/calculator-api:stable
           resources:
             requests:
               cpu: "50m"
