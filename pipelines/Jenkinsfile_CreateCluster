@@ -4,7 +4,7 @@ pipeline {
     parameters {
         string(name: 'strClusterName', defaultValue: 'cluster-project-capstone', description: 'Cluster name')
         choice(name: 'strNamespace', choices: ['PRODUCTION', 'STAGING', 'DEVELOPMENT'], description: 'What namespace?')
-        choice(name: 'strRegion', choices: ['US-EAST-1', 'US-WEST-2'], description: 'What AWS region?')            
+        choice(name: 'strRegion', choices: ['us-east-1', 'us-west-2'], description: 'What AWS region?')            
         
         /* string(name: 'strRegion',
             defaultValue: 'us-west-2',
