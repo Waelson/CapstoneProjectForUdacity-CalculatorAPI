@@ -46,12 +46,12 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "export CURRENT_CONTEXT=$(kubectl config current-context)"
-                sh "${kraneExec} deploy ${strNamespace} $CURRENT_CONTEXT -f ./descriptors-k8s"
-                sh "kubectl get services -o wide --namespace ${strNamespace}
+                //sh "export CURRENT_CONTEXT=$(kubectl config current-context)"
+                //sh "${kraneExec} deploy ${strNamespace} $CURRENT_CONTEXT -f ./descriptors-k8s"
+                //sh "kubectl get services -o wide --namespace ${strNamespace}
                 
-                //sh "chmod +x ./run_deploy.sh $1"
-                //sh "./run_deploy.sh"
+                sh "chmod +x ./run_deploy.sh $1"
+                sh "./run_deploy.sh ${strNamespace}"
             }
         }
     }    
