@@ -3,9 +3,9 @@ from flask.logging import create_logger
 import logging
 
 
-app = Flask(__name__)
-logger = create_logger(app)
-logger.setLevel(logging.DEBUG)
+APP = Flask(__name__)
+LOGGER = create_logger(app)
+LOGGER.setLevel(logging.DEBUG)
 
 
 @app.route("/")
@@ -26,7 +26,7 @@ def multiply():
     return jsonify({"status": "success", "result": result}), 200
 
 if __name__ == "__main__":
-    logger.info("START Flask")
-    app.debug = True
-    app.run(host='0.0.0.0', port=5001)
-    logger.info("SHUTDOWN Flask")
+    LOGGER.info("START Flask")
+    APP.debug = True
+    APP.run(host='0.0.0.0', port=5001)
+    LOGGER.info("SHUTDOWN Flask")
