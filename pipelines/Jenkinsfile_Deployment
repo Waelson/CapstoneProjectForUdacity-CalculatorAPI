@@ -51,7 +51,7 @@ pipeline {
                 //sh "kubectl get services -o wide --namespace ${strNamespace}
                 
                 sh "chmod +x ./run_deploy.sh"
-                sh "./run_deploy.sh ${strNamespace}"
+                sh "./run_deploy.sh ${params.strNamespace}"
             }
         }
     }    
