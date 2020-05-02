@@ -125,7 +125,11 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 <br/>
 
 3 - Now, we let's get information of the cluster using <code>kubectl</code> command.<br/>
-<code>$ kubectl cluster-info</code><br/><br/>
+<code>$ kubectl cluster-info</code><br/>
+<a href="https://gyazo.com/9f353a6bb9e919da6edc4d4006359b22"><img src="https://i.gyazo.com/9f353a6bb9e919da6edc4d4006359b22.gif" alt="Image from Gyazo" width="728"/></a>
+<br/>
+<br/>
+
 4 - Finally, delete cluster.<br/>
 <code>$ eksctl delete cluster cluster --name &#60;cluster-name&#62; --region &#60;region&#62;</code>
 
