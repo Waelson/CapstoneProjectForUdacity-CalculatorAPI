@@ -49,7 +49,9 @@ pipeline {
             }
         }
         stage('Deploy'){
-            sh "{kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ./descriptors-k8s/service.yaml ./descriptors-k8s/deployment.yaml"
+            steps{
+                sh "{kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ./descriptors-k8s/service.yaml ./descriptors-k8s/deployment.yaml"
+            }
         }
         /*
         stage('Push Image to ECS'){
