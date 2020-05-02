@@ -19,7 +19,7 @@ def multiply():
     param2 = request.args.get(key='param2', default=0, type=int)
     if param2 == 0:
         return jsonify({'status': 'error', 'message': 'Invalid parameter 2', 'value': param2}), 500
-    result = int(param1) * int(param2)    
+    result = int(param1)*int(param2)    
     return jsonify({'status': 'success', 'result': result}), 200
 
 if __name__ == "__main__":
