@@ -50,7 +50,7 @@ pipeline {
                 //sh "${kraneExec} deploy ${strNamespace} $CURRENT_CONTEXT -f ./descriptors-k8s"
                 //sh "kubectl get services -o wide --namespace ${strNamespace}
                 
-                sh "chmod +x ./run_deploy.sh $1"
+                sh "chmod +x ./run_deploy.sh"
                 sh "./run_deploy.sh ${strNamespace}"
             }
         }
