@@ -36,7 +36,7 @@ pipeline {
             }
         }
         
-        stage('Push Image to DockerHub'){
+        stage('Push Image'){
             steps{
                 withCredentials([string(credentialsId: 'dockerhub-credential', variable: 'dockerHubPassword')]) {
                     sh "${dockerExec} login -u thedevices -p ${dockerHubPassword}"
@@ -44,7 +44,7 @@ pipeline {
                 }
             }
         }
-        stage('Deploy'){
+        stage('Deploy Kubernetes'){
             steps{
                 sh "chmod +x ./run_deploy.sh"
                 sh "./run_deploy.sh"
