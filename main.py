@@ -20,7 +20,7 @@ def multiply():
     if param2 == 0:
         return jsonify("status" = "error", "message" = "Invalid parameter #2", "value" = param1), 500
     result = int(param1) * int(param2)    
-    return jsonify("status" = "success", "result" = result}), 200
+    return jsonify("status" = "success", "result" = result), 200
 
 if __name__ == "__main__":
     LOGGER.info("START Flask")
