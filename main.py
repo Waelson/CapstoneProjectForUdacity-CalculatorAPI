@@ -15,11 +15,11 @@ def home():
 @app.route("/api/v0/multiply")
 def multiply():
     param1 = request.args.get(key='param1', default=0, type=int)
-    if (param1 == 0):
+    if param1 == 0:
         return jsonify({"status": "error", "message": "Invalid parameter #1", "value": param1}), 500
     
     param2 = request.args.get(key='param2', default=0, type=int)
-    if (param2 == 0):
+    if param2 == 0:
         return jsonify({"status": "error", "message": "Invalid parameter #2", "value": param1}), 500
 
     result = int(param1) * int(param2)    
