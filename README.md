@@ -113,12 +113,17 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 <img width="75%" height="75%" src="https://github.com/Waelson/CapstoneProjectForUdacity-CalculatorAPI/blob/master/images/amazon_eks_policies.png"/>
 
 <h3>:heavy_check_mark: Validating Environment</h3>
+
 1 - Connect to EC2 instance and execute the command below to create a cluster with 3 nodes. This command can to take about 15 minutes to finish. Be patient!<br/>
 <code>$ eksctl create cluster --name &#60;cluster-name&#62; --region &#60;region&#62; --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed</code><br/><br/>
-<a href="https://gyazo.com/1611c73a4c384a2ec677819fdebe07cb"><img src="https://i.gyazo.com/1611c73a4c384a2ec677819fdebe07cb.gif" alt="Image from Gyazo" width="724"/></a></br>
+
 
 2 - Next, we need to update <code>˜/.kube/config</code> file, so that you can use the <code>kubectl</code> command.<br/>
-<code>$ aws eks update-kubeconfig --name &#60;cluster-name&#62;</code><br/><br/>
+<code>$ aws eks update-kubeconfig --name &#60;cluster-name&#62; --region &#60;region&#62;</code><br/>
+<a href="https://gyazo.com/1611c73a4c384a2ec677819fdebe07cb"><img src="https://i.gyazo.com/1611c73a4c384a2ec677819fdebe07cb.gif" alt="Image from Gyazo" width="724"/></a>
+</br>
+<br/>
+
 3 - Now, we let's get information of the cluster using <code>kubectl</code> command.<br/>
 <code>$ kubectl cluster-info</code><br/><br/>
 4 - Finally, delete cluster.<br/>
