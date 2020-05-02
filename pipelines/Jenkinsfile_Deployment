@@ -24,11 +24,17 @@ pipeline {
             }
         }
         
-        stage('Lint'){
+        stage('Linting Dockerfile'){
             steps{
                 sh "${hadolintExec} --ignore DL3013 Dockerfile"
             }
         }
+        
+        stage('Linting Python'){
+            steps{
+                sh "pylint *.py"
+            }
+        }        
         
         stage('Build Image'){
             steps{
