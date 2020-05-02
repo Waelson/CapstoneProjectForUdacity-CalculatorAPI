@@ -52,7 +52,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "${descriptorsk8s} -> OK"
+                sh "echo ${descriptorsk8s} -> OK"
                 sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ${descriptorsk8s}"
             }
         }
