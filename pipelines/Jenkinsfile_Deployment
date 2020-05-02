@@ -53,8 +53,8 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "echo ${descriptorsk8s} -> OK"
-                sh "mv ${descriptorsk8s}/*.yaml ${workspace}"
+                //sh "echo ${descriptorsk8s} -> OK"
+                //sh "mv ${descriptorsk8s}/*.yaml ${workspace}"
                 sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ./descriptors-k8s"
             }
         }
