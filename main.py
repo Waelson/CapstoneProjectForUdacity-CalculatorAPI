@@ -9,10 +9,12 @@ LOGGER.setLevel(logging.DEBUG)
 
 @APP.route("/")
 def home():
+    """ Return the home page """
     return "Welcome to Calculator API"
 
 @APP.route("/api/v0/multiply")
 def multiply():
+    """ Return multiplication of param1 and param2 """    
     param1 = request.args.get(key='param1', default=0, type=int)
     if param1 == 0:
         return jsonify({'status': 'error', 'message': 'Invalid parameter 1', 'value': param1}), 500
