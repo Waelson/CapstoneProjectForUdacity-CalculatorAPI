@@ -9,7 +9,12 @@ pipeline {
 
         string(name: 'strRegion',
             defaultValue: 'us-west-2',
-            description: 'AWS Region')            
+            description: 'AWS Region')
+            
+
+        string(name: 'strNamespace',
+            defaultValue: 'production',
+            description: 'Namespace (ex: production, stage or test)')            
     }    
     
     environment{
@@ -17,10 +22,22 @@ pipeline {
     }
     
     stages {
-        stage('Deploy Cluster'){
+        stage('Create Cluster'){
             steps{
                 sh "${eksctlExec} create cluster --name ${params.strClusterName} --region ${params.strRegion} --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed"
             }  
+        }
+        
+        stage('Config KUBECONFIG'){
+            steps{
+                sh "aws eks update-kubeconfig --name ${params.strClusterName} --region ${params.strRegion}"
+            }
+        }
+        
+        stage('Create Namespace'){
+            steps{
+                sh "kubectl create namespace ${params.strNamespace}"
+            }
         }
     }
 }
