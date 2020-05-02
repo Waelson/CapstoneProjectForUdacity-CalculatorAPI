@@ -46,7 +46,8 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "${kraneExec} deploy ${strNamespace} $(kubectl config current-context) -f ./descriptors-k8s"
+                sh "export CURRENT_CONTEXT=$(kubectl config current-context)"
+                sh "${kraneExec} deploy ${strNamespace} $CURRENT_CONTEXT -f ./descriptors-k8s"
                 sh "kubectl get services -o wide --namespace ${strNamespace}
                 
                 //sh "chmod +x ./run_deploy.sh $1"
