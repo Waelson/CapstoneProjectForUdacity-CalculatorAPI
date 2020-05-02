@@ -57,7 +57,7 @@ pipeline {
                 //sh "mv ${descriptorsk8s}/*.yaml ${workspace}"
                 //sh "export KUBECONFIG=~/.kube/config"                
                 //sh "${kraneExec} deploy project-capstone arn:aws:eks:us-west-2:053455162894:cluster/cluster-name1 -f ./descriptors-k8s"
-                sh "chmod+x ./run_deploy.sh"
+                sh "chmod +x ./run_deploy.sh"
                 sh "./run_deploy.sh"
             }
         }
