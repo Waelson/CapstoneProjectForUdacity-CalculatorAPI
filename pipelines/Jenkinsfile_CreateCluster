@@ -2,19 +2,19 @@ pipeline {
     agent any
     
     parameters {
-        string(name: 'strClusterName',
-            defaultValue: 'cluster-project-capstone',
-            description: 'Cluster name')
-            
-
-        string(name: 'strRegion',
+        string(name: 'strClusterName', defaultValue: 'cluster-project-capstone', description: 'Cluster name')
+        choice(name: 'strNamespace', choices: ['PRODUCTION', 'STAGING', 'DEVELOPMENT'], description: 'What namespace?')
+        choice(name: 'strRegion', choices: ['US-EAST-1', 'US-WEST-2'], description: 'What AWS region?')            
+        
+        /* string(name: 'strRegion',
             defaultValue: 'us-west-2',
-            description: 'AWS Region')
+            description: 'AWS Region') */
             
 
-        string(name: 'strNamespace',
+        /* string(name: 'strNamespace',
             defaultValue: 'production',
-            description: 'Namespace (ex: production, stage or test)')            
+            description: 'Namespace (ex: production, stage or test)') */
+            
     }    
     
     environment{
