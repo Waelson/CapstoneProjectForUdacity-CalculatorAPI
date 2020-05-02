@@ -131,7 +131,10 @@ Create a AIM Role with all policies <i>AmazonEKS*</i> and attach it on EC2 Insta
 <br/>
 
 4 - Finally, delete cluster.<br/>
-<code>$ eksctl delete cluster cluster --name &#60;cluster-name&#62; --region &#60;region&#62;</code>
+<code>$ eksctl delete cluster cluster --name &#60;cluster-name&#62; --region &#60;region&#62;</code><br/>
+<a href="https://gyazo.com/67fa248990144b570e26169946e4b476"><img src="https://i.gyazo.com/67fa248990144b570e26169946e4b476.gif" alt="Image from Gyazo" width="724"/></a>
+<br/>
+<br/>
 
 <h3>:heavy_check_mark: Rolling Update Release</h3>
 As defined by the website kubernetes.io, rolling updates is a strategy that allow you deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones. 
