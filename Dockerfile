@@ -1,6 +1,6 @@
 FROM python:alpine3.11
 
-WORKDIR /app
+1WORKDIR /app
 
 COPY . main.py /app/
 
