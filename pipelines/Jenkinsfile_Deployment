@@ -32,7 +32,7 @@ pipeline {
         
         stage('Linting Python'){
             steps{
-                sh "pylint --disable=C0326 *.py"
+                sh "pylint --disable=C0326,C0114,C0115,C0116 *.py"
             }
         }        
         
