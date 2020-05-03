@@ -1,4 +1,5 @@
 """ Single page """
+import socket
 import logging
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
@@ -11,7 +12,7 @@ LOGGER.setLevel(logging.DEBUG)
 @APP.route("/")
 def home():
     """ Return the home page """
-    return "Welcome to Calculator API"
+    return "<html><body background-color:'blue'><h1>Welcome to Calculator API</h1><br/>Host: {}</body></html>".format(socket.gethostname())
 
 @APP.route("/api/v0/multiply")
 def multiply():
