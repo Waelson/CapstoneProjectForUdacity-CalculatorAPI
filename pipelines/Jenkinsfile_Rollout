@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    
+    parameters {
+        string(name: 'strVersao', defaultValue: 'stable', description: 'Version')
+        choice(name: 'strNamespace', choices: ['production', 'staging', 'development'], description: 'What namespace?')            
+    }    
+        
+    stages {
+        stage('Update Application'){
+            steps{
+                 sh "kubectl -n ${params.strNamespace} set image deployments/flask-backend-deployment flask-app=thedevices/calculator-api:${params.strVersao}"
+            }
+        }
+    }    
+    
+}
