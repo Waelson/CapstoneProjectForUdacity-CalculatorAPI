@@ -97,6 +97,9 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   <li>
     Docker Engine
     <ul>      
+      <li><code>$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"</code></li>       
+      <li><code>$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</code></li>       
+      <li><code>$ sudo apt-get update</code></li>      
       <li><code>$ sudo apt-get install docker-ce docker-ce-cli containerd.io</code></li> 
     </ul>
   
