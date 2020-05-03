@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters {
-        string(name: 'strClusterName', defaultValue: 'cluster-project-capstone', description: 'Cluster name')
+        string(name: 'strClusterName', defaultValue: 'cluster-calculator-api', description: 'Cluster name')
         choice(name: 'strRegion', choices: ['us-east-1', 'us-west-2'], description: 'What AWS region?')            
     }    
     
