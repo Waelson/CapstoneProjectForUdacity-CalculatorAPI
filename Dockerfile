@@ -4,6 +4,7 @@ MAINTAINER Waelson Nunes <waelson@gmail.com>
 WORKDIR /app
 
 COPY . main.py /app/
+COPY
 
 RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
