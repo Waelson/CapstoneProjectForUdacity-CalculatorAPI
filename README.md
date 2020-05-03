@@ -62,6 +62,17 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   </li>
   
   <li>
+    Python and other tools
+    <ul>      
+      <li><code>$ sudo apt install python3</code></li>      
+      <li><code>$ sudo apt install python3-pip</code></li>
+      <li><code>$ sudo apt install virtualenv</code></li> 
+      <li><code>$ sudo pip install pylint && pip install pylint --upgrade</code></li>       
+      <li><code>$sudo cp /home/<your user>/.local/bin/pylint /usr/local/bin</code></li>
+    </ul>  
+  </li>    
+  
+  <li>
     Pip for Python
     <ul>
       <li><code>$ sudo apt install python-pip</code></li>
@@ -101,6 +112,8 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
       <li><code>$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</code></li>       
       <li><code>$ sudo apt-get update</code></li>      
       <li><code>$ sudo apt-get install docker-ce docker-ce-cli containerd.io</code></li> 
+      <li><code>$ sudo chmod 777 /var/run/docker.sock</code></li>       
+      
     </ul>
   
   <li>
