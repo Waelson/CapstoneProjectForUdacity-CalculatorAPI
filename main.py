@@ -12,7 +12,7 @@ LOGGER.setLevel(logging.DEBUG)
 @APP.route("/")
 def home():
     """ Return the home page / Green=#006400 / Blue=#1E90FF """
-    return "<html><body style='background-color:#006400; color: white;'><h3>Welcome to Calculator API</h3><br/><h1>HOST: {}</h1></body></html>".format(socket.gethostname())
+    return "<html><body style='background-color:#1E90FF; color: white;'><h3>Welcome to Calculator API</h3><br/><h1>HOST: {}</h1></body></html>".format(socket.gethostname())
 
 @APP.route("/api/v0/multiply")
 def multiply():
