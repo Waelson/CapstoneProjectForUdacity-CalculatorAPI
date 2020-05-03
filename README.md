@@ -62,9 +62,9 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   </li>
   
   <li>
-    Pip for Python 3
+    Pip for Python
     <ul>
-      <li><code>$ sudo apt install python3-pip</code></li>
+      <li><code>$ sudo apt install python-pip</code></li>
     </ul>  
   </li>  
   
