@@ -32,6 +32,7 @@ pipeline {
         
         stage('Linting Python'){
             steps{
+                sh "pip install -r requirements.txt"
                 sh "pylint --disable=R,C,W1203 main.py"
             }
         }        
