@@ -32,8 +32,8 @@ pipeline {
         
         stage('Linting Python'){
             steps{
-                sh "virtualenv -p /usr/bin/python3 deploy_env"
-                sh "source deploy_env/bin/activate"
+                sh "python3 -m venv ~/.deploy_env"
+                sh "source ~/.deploy_env/bin/activate"
                 sh "pip install -r requirements.txt"
                 sh "pylint --disable=R,C,W1203 main.py"
             }
