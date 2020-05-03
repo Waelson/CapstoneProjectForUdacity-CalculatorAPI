@@ -106,10 +106,10 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   <li>
     Hadolint
     <ul>      
-      <li><code>$ sudo apt-get install haskell-platform</code></li>    
-      <li><code>$ sudo apt install haskell-stack</code></li>    
-      <li><code>$ sudo apt-get install haskell-platform</code></li>          
-      
+      <li><code>$ wget https://github.com/hadolint/hadolint/releases/download/v1.1/hadolint_linux_amd64</code></li>    
+      <li><code>$ sudo chmod +x hadolint_linux_amd64</code></li>    
+      <li><code>$ sudo mv hadolint_linux_amd64 hadolint</code></li>          
+      <li><code>$ sudo mv hadolint /usr/local/bin</code></li>      
     </ul>  
   
   <li>
