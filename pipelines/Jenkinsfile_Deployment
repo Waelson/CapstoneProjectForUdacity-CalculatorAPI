@@ -56,8 +56,13 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "chmod +x ./run_deploy.sh"
-                sh "./run_deploy.sh ${params.strNamespace}"
+                //sh "chmod +x ./run_deploy.sh"
+                //sh "./run_deploy.sh ${params.strNamespace}"
+                
+                sh "kubectl apply -f ./descriptors-k8s"
+                sh "kubectl -n ${params.strNamespace} set image deployments/flask-backend-deployment flask-app=thedevices/calculator-api:${params.strVersao}"
+                sh "kubectl -n ${params.strNamespace} rollout status deployments/flask-backend-deployment"
+                sh "kubectl -n ${params.strNamespace} get services -o wide"
             }
         }
     }    
