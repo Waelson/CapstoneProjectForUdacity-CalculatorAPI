@@ -1,5 +1,5 @@
 FROM python:alpine3.11
-
+MAINTAINER Waelson Nunes <waelson@gmail.com>
 
 WORKDIR /app
 
