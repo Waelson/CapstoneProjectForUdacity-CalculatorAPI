@@ -104,6 +104,12 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
     </ul>
   
   <li>
+    Hadolint
+    <ul>      
+      <li><code>$ sudo apt-get install haskell-platform</code></li>       
+    </ul>  
+  
+  <li>
     Kubectl
     <ul>  
       <li><code>$ curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl</code></li>
