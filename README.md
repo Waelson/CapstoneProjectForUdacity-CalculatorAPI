@@ -69,9 +69,11 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
   </li>  
   
   <li>
-    AWS Client
+    AWS Client V2.0
     <ul>  
-      <li><code>$ pip install awscli --upgrade --user</code></li>  
+      <li><code>$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"</code></li>  
+      <li><code>$ unzip awscliv2.zip</code></li>  
+      <li><code>$ sudo ./aws/install</code></li>        
     </ul>
   </li>
   
