@@ -1,9 +1,9 @@
 FROM python:alpine3.11
-MAINTAINER Waelson Nunes <waelson@gmail.com>
+
 
 WORKDIR /app
 
-KOPY . main.py /app/
+COPY . main.py /app/
 
 
 RUN pip install --upgrade pip &&\
