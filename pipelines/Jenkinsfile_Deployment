@@ -15,7 +15,7 @@ pipeline {
         def kraneExec = "/var/lib/gems/2.5.0/gems/krane-1.1.3/exe/krane"
         def workspace = pwd()
         def descriptorsk8s = "${workspace}/descriptors-k8s"
-        def pylintExec = "/home/ubuntu/.local/bin/pylint"
+        def pylintExec = "/usr/local/bin/pylint"
     }
     
     stages {
