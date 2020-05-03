@@ -192,5 +192,5 @@ spec:
   <li>Installing aws-iam-authenticator - <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html">https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html</a></li>
   <li>Install and Set Up kubectl - <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">https://kubernetes.io/docs/tasks/tools/install-kubectl/</a></li>  
   <li>Shopfy/krane - <a href="https://github.com/Shopify/krane">https://github.com/Shopify/krane</a></li>
-  <li>Hadolint V1.1 - <a href="https://github.com/hadolint/hadolint/releases/tag/v1.1">https://github.com/hadolint/hadolint/releases/tag/v1.1</li>
+  <li>Hadolint v1.1 - <a href="https://github.com/hadolint/hadolint/releases/tag/v1.1">https://github.com/hadolint/hadolint/releases/tag/v1.1</li>
 </ul>
