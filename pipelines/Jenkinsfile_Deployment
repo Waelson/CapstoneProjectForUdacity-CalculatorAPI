@@ -32,6 +32,7 @@ pipeline {
         
         stage('Linting Python'){
             steps{
+                sh "alias python=python3"
                 sh "python --version"
                 sh "pip3 install -r requirements.txt"
                 sh "pylint --disable=R,C,W1203 main.py"
