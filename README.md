@@ -113,9 +113,8 @@ It was used Jenkins to automate manage of the Cluster Kubernetes and Application
       <li><code>$ sudo apt-get update</code></li>      
       <li><code>$ sudo apt-get install docker-ce docker-ce-cli containerd.io</code></li> 
       <li><code>$ sudo chmod 777 /var/run/docker.sock</code></li>       
-      
     </ul>
-  
+  </li>
   <li>
     Hadolint
     <ul>      
