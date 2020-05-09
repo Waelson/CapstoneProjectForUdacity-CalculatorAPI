@@ -4,7 +4,7 @@
 <strong>Capstone project for Udacity's Cloud DevOps Engineer</strong><br/>
 
 <h3>:heavy_check_mark: Description</h3>
-This project consists of deploying an API in a Kubernetes Cluster using deployment Rolling Update strategy.<br/> The application used in this project is based on Python and Flask. This project has a single endpoint:<br/><br/>
+This project consists of deploying an API on Kubernetes using deployment Rolling Update strategy.<br/> The application used in this project is based on Python and Flask. This project has a single endpoint:<br/><br/>
 <ul>
   <li><strong>/api/v0/multiply</strong></li>
   <ul>
